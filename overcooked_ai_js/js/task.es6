@@ -68,9 +68,9 @@ export class OvercookedGame {
                     'X': 'counter.png',
                     'P': 'pot.png',
                     'O': 'onions.png',
-                    'T': 'tomatoes.png',
                     'D': 'dishes.png',
-                    'S': 'serve.png'
+                    'S': 'serve.png',
+					'G': 'garbage.png'
                 };
                 let pos_dict = this.mdp._get_terrain_type_pos_dict();
                 for (let ttype in pos_dict) {

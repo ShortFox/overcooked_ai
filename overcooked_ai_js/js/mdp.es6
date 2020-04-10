@@ -414,6 +414,12 @@ export class OvercookedGridworld {
                     player.set_object(new_state.remove_object(i_pos));
                 }
             }
+			else if (terrain_type === 'G')
+			{
+				if (player.has_object() && !new_state.has_object(i_pos)) {
+					player.remove_object();
+                }
+			}
             else if (!player.has_object()) {
                 if (terrain_type === 'O') {
                     player.set_object(new ObjectState({name: 'onion', position: pos}));
